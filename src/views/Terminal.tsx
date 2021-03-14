@@ -1,6 +1,6 @@
-import { memo ,FC } from "react"
+import { memo, FC } from "react";
 
-const Terminal:FC = () =>{
-    return <div>111</div>
-}
+const Terminal: FC = () => {
+  return <div>111</div>;
+};
 export default memo(Terminal);

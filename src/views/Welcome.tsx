@@ -96,7 +96,7 @@ const Welcome: FC<WelcomeProps> = ({ message }) => {
   };
   const handleDblClick = () => {
     clearTimeout(clickId);
-    console.log('double click');
+    console.log("double click");
   };
   useEffect(() => {
     let index = 0;
@@ -115,10 +115,7 @@ const Welcome: FC<WelcomeProps> = ({ message }) => {
     };
   }, [message]);
   return (
-    <Container
-      onDoubleClick={handleDblClick}
-      onClick={handleClick}
-    >
+    <Container onDoubleClick={handleDblClick} onClick={handleClick}>
       <WelcomeContainer
         ref={welcomeRef}
         className={classNames({ finish: finish })}
