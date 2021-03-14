@@ -22,6 +22,7 @@ const WelcomeContainer = styled.div`
   color: white;
   font-size: 50px;
   margin-bottom: 16px;
+  max-width: calc(100% - 40px);
   user-select: none;
   text-align: center;
   cursor: default;
@@ -63,6 +64,7 @@ const WelcomeContainer = styled.div`
 `;
 
 const Prompt = styled.div`
+  max-width: calc(100% - 50px);
   font-size: 30px;
   color: gray;
   text-align: center;
