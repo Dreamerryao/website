@@ -7,6 +7,7 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
     "classnames": "^2.2.6",
+    "lodash": "^4.17.21",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.11",
+    "@types/lodash": "^4.14.168",
     "@types/styled-components": "^5.1.8"
   }
 }

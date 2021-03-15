@@ -7,17 +7,20 @@ interface WelcomeProps {
 }
 
 const Container = styled.div`
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
+  background-color: transparent;
 `;
 
-const promptMessage =
-  "Click to Enter my world and Double Click to use Terminal";
+const promptMessage = "Click to Enter my world!";
 const WelcomeContainer = styled.div`
   color: white;
   font-size: 50px;
@@ -84,6 +87,7 @@ const Prompt = styled.div`
     }
   }
 `;
+
 const Welcome: FC<WelcomeProps> = ({ message }) => {
   const welcomeRef = useRef<HTMLDivElement>(null);
   const [finish, setFinish] = useState<boolean>(false);

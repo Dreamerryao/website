@@ -6,16 +6,26 @@ interface IconButtonProps {
 }
 
 const Container = styled.div`
-    width:50px;
-    height:40px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    z-index:1;
-    position:absolute;
-    bottom:10px;
-    right:20px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 5px #ffffff;
+  cursor: pointer;
 `;
 
 const IconButton: FC<IconButtonProps> = ({ onClick, children }) => {
-  return <Container>{children}</Container>;
+  return (
+    <Container onClick={onClick}>
+      <div style={{ width: "40px", height: "40px" }}>{children}</div>
+    </Container>
+  );
 };
 export default memo(IconButton);
