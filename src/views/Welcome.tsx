@@ -12,6 +12,7 @@ const Container = styled.div`
   z-index: 1;
   width: 100%;
   height: 100%;
+  top:0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,11 +21,14 @@ const Container = styled.div`
   background-color: transparent;
 `;
 
-const promptMessage = "Click to Enter my world!";
+const promptMessage = "A front-end enthusiast";
 const WelcomeContainer = styled.div`
   color: white;
+  /* font-family:Georgia; */
+  font-family: Chalkduster, fantasy;
+  font-weight:800;
   font-size: 50px;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   max-width: calc(100% - 40px);
   user-select: none;
   text-align: center;
@@ -68,8 +72,9 @@ const WelcomeContainer = styled.div`
 
 const Prompt = styled.div`
   max-width: calc(100% - 50px);
-  font-size: 30px;
-  color: gray;
+  font-size: 36px;
+  font-family: Luminari, fantasy;
+  color: lightgray;
   text-align: center;
   cursor: default;
   user-select: none;
@@ -91,17 +96,17 @@ const Prompt = styled.div`
 const Welcome: FC<WelcomeProps> = ({ message }) => {
   const welcomeRef = useRef<HTMLDivElement>(null);
   const [finish, setFinish] = useState<boolean>(false);
-  let clickId: NodeJS.Timeout;
-  const handleClick = () => {
-    clearTimeout(clickId);
-    clickId = setTimeout(() => {
-      console.log("click");
-    }, 200);
-  };
-  const handleDblClick = () => {
-    clearTimeout(clickId);
-    console.log("double click");
-  };
+  // let clickId: NodeJS.Timeout;
+  // const handleClick = () => {
+  //   clearTimeout(clickId);
+  //   clickId = setTimeout(() => {
+  //     console.log("click");
+  //   }, 200);
+  // };
+  // const handleDblClick = () => {
+  //   clearTimeout(clickId);
+  //   console.log("double click");
+  // };
   useEffect(() => {
     let index = 0;
     setFinish(false);
@@ -118,8 +123,16 @@ const Welcome: FC<WelcomeProps> = ({ message }) => {
       clearInterval(typeText);
     };
   }, [message]);
+
+  useEffect(() => {
+    window.addEventListener("keydown", (e) => {
+      if (e.code === "Enter") {
+        console.log("hello");
+      }
+    });
+  }, []);
   return (
-    <Container onDoubleClick={handleDblClick} onClick={handleClick}>
+    <Container>
       <WelcomeContainer
         ref={welcomeRef}
         className={classNames({ finish: finish })}

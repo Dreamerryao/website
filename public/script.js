@@ -74,7 +74,7 @@ let pointers = [];
 let splatStack = [];
 pointers.push(new pointerPrototype());
 
-const { gl, ext } = getWebGLContext(canvas);
+var { gl, ext } = getWebGLContext(canvas);
 
 if (isMobile()) {
     config.DYE_RESOLUTION = 512;
@@ -270,7 +270,7 @@ function addKeywords (source, keywords) {
     return keywordsString + source;
 }
 
-const baseVertexShader = compileShader(gl.VERTEX_SHADER, `
+var baseVertexShader = compileShader(gl.VERTEX_SHADER, `
     precision highp float;
 
     attribute vec2 aPosition;
@@ -1313,10 +1313,8 @@ window.ontouchend =  e => {
 };
 
 window.onkeydown = e => {
-    if (e.code === 'KeyP')
-        config.PAUSED = !config.PAUSED;
     if (e.key === ' ')
-        splatStack.push(parseInt(Math.random() * 20) + 5);
+        splatStack.push(parseInt(Math.random() * 5) + 5);
 };
 
 function updatePointerDownData (pointer, id, posX, posY) {

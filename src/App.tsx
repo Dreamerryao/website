@@ -1,33 +1,41 @@
-import { FC, memo, useState } from "react";
+import { FC, memo} from "react";
 import Welcome from "./views/Welcome";
+import NotMatch from "./views/NotMatch";
 import WowCanvas from "./views/WowCanvas";
-import IconButton from "./common_components/IconButton";
-import Terminal from "./views/Terminal";
 import styled from "styled-components";
-import { ReactComponent as TerminalIcon } from "./assets/terminal.svg";
+import Tab from "./components/Tab";
+
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 const getYear = () => {
   return new Date().getFullYear();
 };
 
 const welcomeMessage = `Dreamerryao \u00A9${getYear()}\n`;
 const Container = styled.div`
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  position:relative;
-  background-color:black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  /* background-color: black; */
 `;
 
 const App: FC = () => {
-  const [terminalOpen, setTerminalOpen] = useState<boolean>(false);
   return (
-    <Container >
-      <WowCanvas/>
-      <IconButton onClick={() => setTerminalOpen((x) => !x)}>
-        <TerminalIcon />
-      </IconButton>
-      <Welcome message={welcomeMessage} />
-      {terminalOpen && <Terminal />}
+    <Container>
+      <Router>
+        <Tab />
+        <Switch>
+          <Route exact path="/">
+            <WowCanvas/>
+            <Welcome message={welcomeMessage} />
+          </Route>
+          <Route path="*">
+            <NotMatch />
+          </Route>
+        </Switch>
+      </Router>
     </Container>
   );
 };
