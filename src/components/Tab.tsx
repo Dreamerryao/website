@@ -22,7 +22,7 @@ const StyledLink = styled(Link)`
   color: inherit;
   font-size: 24px;
   mix-blend-mode: difference;
-  font-family: Chalkduster, fantasy;
+  font-family: Chalkduster,Comic Sans MS;
   font-weight: 600;
 `;
 const Tab: FC = () => {

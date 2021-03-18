@@ -18,17 +18,18 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   /* background-color: black; */
-  background-color: transparent;
+  /* background-color: transparent; */
 `;
 
 const promptMessage = "A front-end enthusiast";
 const WelcomeContainer = styled.div`
   color: white;
   /* font-family:Georgia; */
-  font-family: Chalkduster, fantasy;
+  font-family: Chalkduster,Comic Sans MS;
   font-weight:800;
   font-size: 50px;
   margin-bottom: 40px;
+  mix-blend-mode: difference;
   max-width: calc(100% - 40px);
   user-select: none;
   text-align: center;
@@ -73,8 +74,9 @@ const WelcomeContainer = styled.div`
 const Prompt = styled.div`
   max-width: calc(100% - 50px);
   font-size: 36px;
-  font-family: Luminari, fantasy;
+  font-family: Luminari,Comic Sans MS;
   color: lightgray;
+  mix-blend-mode: difference;
   text-align: center;
   cursor: default;
   user-select: none;

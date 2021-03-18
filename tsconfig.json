@@ -21,6 +21,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
-, "public/script.js", "node_modules/react-fluid-animation/animation.d.ts"  ]
+    "src" ]
 }

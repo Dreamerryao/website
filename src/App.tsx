@@ -28,8 +28,9 @@ const App: FC = () => {
         <Tab />
         <Switch>
           <Route exact path="/">
+          <Welcome message={welcomeMessage} />
             <WowCanvas/>
-            <Welcome message={welcomeMessage} />
+            
           </Route>
           <Route path="*">
             <NotMatch />
