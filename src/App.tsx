@@ -2,6 +2,7 @@ import { FC, memo} from "react";
 import Welcome from "./views/Welcome";
 import NotMatch from "./views/NotMatch";
 import WowCanvas from "./views/WowCanvas";
+import About from "./views/About";
 import styled from "styled-components";
 import Tab from "./components/Tab";
 
@@ -16,7 +17,7 @@ const welcomeMessage = `Dreamerryao \u00A9${getYear()}\n`;
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   /* background-color: black; */
 `;
@@ -30,7 +31,9 @@ const App: FC = () => {
           <Route exact path="/">
           <Welcome message={welcomeMessage} />
             <WowCanvas/>
-            
+          </Route>
+          <Route path="/about">
+            <About/>
           </Route>
           <Route path="*">
             <NotMatch />

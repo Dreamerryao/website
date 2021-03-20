@@ -17,6 +17,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  mix-blend-mode: difference;
   /* background-color: black; */
   /* background-color: transparent; */
 `;

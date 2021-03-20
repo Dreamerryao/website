@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const TabContainer = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 80px;
   z-index: 2;
   background-color: transparent;
-  color: white;
+  /* color: white; */
   mix-blend-mode: difference;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@ const TabContainer = styled.div`
 const StyledLink = styled(Link)`
   margin: 0 24px;
   text-decoration: none;
-  color: inherit;
+  color: white;
   font-size: 24px;
   mix-blend-mode: difference;
   font-family: Chalkduster,Comic Sans MS;
@@ -28,8 +28,10 @@ const StyledLink = styled(Link)`
 const Tab: FC = () => {
   return (
     <TabContainer>
+      <StyledLink to="/">Home</StyledLink>
+      <StyledLink to="/blog">Blog</StyledLink>
       <StyledLink to="/about">About</StyledLink>
-      <StyledLink to="/404">404</StyledLink>
+      <StyledLink to="/404">Wow</StyledLink>
     </TabContainer>
   );
 };
