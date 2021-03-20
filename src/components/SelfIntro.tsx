@@ -17,6 +17,7 @@ const Me = styled.div`
   width: 58vw;
   height: 100%;
   background-repeat: no-repeat;
+  border-radius: 8px;
   background-position: 50%;
   background-size: cover;
 `;
@@ -96,10 +97,11 @@ const ZJU = styled.div`
   background-image: url(/assets/zju.jpg);
   background-repeat: no-repeat;
   background-position: 20%;
-  width: 1000px;
-  background-size: contain;
+  width: 1200px;
+  background-size: cover;
   transform: translateY(-20%);
   margin-right: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 const SelfIntro: FC = () => {
@@ -134,11 +136,11 @@ const SelfIntro: FC = () => {
           <StyledP>First Level Scholarship</StyledP>
           <StyledP>School-level outstanding league cadres</StyledP>
           <StyledP>
-            Join{" "}
+            Become a member of{" "}
             <StyledA href="https://zjuidg.org/">
-              <strong>ZJUIDG,the State Key Lab of CAD&CG</strong>
+              <strong>ZJUIDG</strong>,the State Key Lab of CAD&CG
             </StyledA>{" "}
-            which manager is{" "}
+            advised by Prof.{" "}
             <StyledA href="http://www.ycwu.org">Yingcai Wu</StyledA>
           </StyledP>
         </TimeLineItem>
@@ -152,9 +154,10 @@ const SelfIntro: FC = () => {
               Visual Analytics of Multivariate Event Sequence Data in Racquet
               Sports
             </strong>
+            ,which published in VIS2020
           </StyledP>
           <StyledP>
-            Join{" "}
+            Started internship at{" "}
             <StyledA href="https://www.molardata.com/">
               <strong>Molardata Tech</strong>
             </StyledA>
@@ -164,7 +167,7 @@ const SelfIntro: FC = () => {
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>
           <Title>2021</Title>
-          <StyledP>Join ByteDance</StyledP>
+          <StyledP>Started internship at ByteDance</StyledP>
         </TimeLineItem>
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>

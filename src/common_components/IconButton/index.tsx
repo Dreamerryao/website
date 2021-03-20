@@ -17,7 +17,6 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 5px 5px #ffffff;
   cursor: pointer;
 `;
 
