@@ -10,7 +10,7 @@ const Container = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   color: #aaa;
-  font-family: Monaco, Consola;
+  font-family: Monaco, Consola, Comic Sans MS;
   padding: 2rem;
   outline: none;
   /* cursor: text; */
