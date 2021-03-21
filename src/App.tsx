@@ -1,11 +1,10 @@
-import { FC, memo} from "react";
+import { FC, memo } from "react";
 import Welcome from "./views/Welcome";
 import NotMatch from "./views/NotMatch";
 import WowCanvas from "./views/WowCanvas";
 import About from "./views/About";
 import styled from "styled-components";
 import Tab from "./components/Tab";
-
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -24,14 +23,15 @@ const App: FC = () => {
   return (
     <Container>
       <Router>
-        <Tab />
         <Switch>
           <Route exact path="/">
-          <Welcome message={welcomeMessage} />
-            <WowCanvas/>
+            <Tab />
+            <Welcome message={welcomeMessage} />
+            <WowCanvas />
           </Route>
           <Route path="/about">
-            <About/>
+            <Tab />
+            <About />
           </Route>
           <Route path="*">
             <NotMatch />

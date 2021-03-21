@@ -7,8 +7,8 @@ const Page = styled.div`
   height: 100vh;
   width: 100vw;
   background-image: url(/assets/selfBg.jpg);
-  background-position:center;
-  background-size:cover;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,15 +28,12 @@ const About: FC = () => {
     <div>
       <MoveInWidthwise displayed={<SelfIntro />} />
       <Page>
-        <div >
-          Contact Me
+        <div>Contact Me</div>
+        <div>
+          GitHub:{" "}
+          <StyledA href="https://github.com/Dreamerryao">Dreamerryao</StyledA>
         </div>
-        <div >
-          GitHub: <StyledA href="https://github.com/Dreamerryao">Dreamerryao</StyledA>
-        </div>
-        <div style={{fontSize:'1.5rem'}}>
-          QQ: 244791255
-        </div>
+        <div style={{ fontSize: "1.5rem" }}>QQ: 244791255</div>
       </Page>
     </div>
   );

@@ -90,7 +90,7 @@ const StyledP = styled.p`
 `;
 
 const StyledA = styled.a`
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 `;
 const ZJU = styled.div`
@@ -136,7 +136,7 @@ const SelfIntro: FC = () => {
           <StyledP>First Level Scholarship</StyledP>
           <StyledP>School-level outstanding league cadres</StyledP>
           <StyledP>
-            Become a member of{" "}
+            Became a member of{" "}
             <StyledA href="https://zjuidg.org/">
               <strong>ZJUIDG</strong>,the State Key Lab of CAD&CG
             </StyledA>{" "}

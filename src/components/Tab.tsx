@@ -17,10 +17,10 @@ const TabContainer = styled.div`
   justify-content: flex-end;
 `;
 const StyledLink = styled(Link)`
-  margin: 0 24px;
+  margin: 0 1rem;
   text-decoration: none;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   mix-blend-mode: difference;
   font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
   font-weight: 600;

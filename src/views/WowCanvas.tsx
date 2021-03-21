@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import WebglFluid from 'webgl-fluid';
+import WebglFluid from "webgl-fluid";
 const Canvas = styled.canvas`
   position: absolute;
   width: 100%;
@@ -15,9 +15,9 @@ class WowCanvas extends React.Component {
     this.canvasRef = React.createRef();
   }
   componentDidMount() {
-    WebglFluid(this.canvasRef.current,{
+    WebglFluid(this.canvasRef.current, {
       IMMEDIATE: false, // Whether to trigger multiple random splats when initialized
-      TRIGGER: 'click', // Can be change to 'click'
+      TRIGGER: "click", // Can be change to 'click'
       SIM_RESOLUTION: 128,
       DYE_RESOLUTION: 1024,
       CAPTURE_RESOLUTION: 512,
@@ -46,7 +46,7 @@ class WowCanvas extends React.Component {
     });
   }
   render() {
-    return <Canvas ref={this.canvasRef}/>;
+    return <Canvas ref={this.canvasRef} />;
   }
 }
 export default WowCanvas;
