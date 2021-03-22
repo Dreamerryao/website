@@ -126,7 +126,7 @@ const SelfIntro: FC = () => {
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>
           <Title>2018</Title>
-          <StyledP>got adimission to Zhejiang University</StyledP>
+          <StyledP>got adimission to Zhejiang University{"   "}</StyledP>
         </TimeLineItem>
         <ZJU />
         <TimeLineItem>
