@@ -25,11 +25,20 @@ const StyledLink = styled(Link)`
   font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
   font-weight: 600;
 `;
+const StyledA = styled.a`
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  mix-blend-mode: difference;
+  font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
+  font-weight: 600;
+`;
 const Tab: FC = () => {
   return (
     <TabContainer>
       <StyledLink to="/">Home</StyledLink>
-      <StyledLink to="/blog">Blog</StyledLink>
+      <StyledA href="http://blog.dreamerryao.wiki">Blog</StyledA>
       <StyledLink to="/about">About</StyledLink>
       <StyledLink to="/404">Wow</StyledLink>
     </TabContainer>
