@@ -28,7 +28,7 @@ const About: FC = () => {
     <div>
       <MoveInWidthwise displayed={<SelfIntro />} />
       <Page>
-        <div>Contact Me</div>
+        <div>Contact me</div>
         <div>
           GitHub:{" "}
           <StyledA href="https://github.com/Dreamerryao">Dreamerryao</StyledA>

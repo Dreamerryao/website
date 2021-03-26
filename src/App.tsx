@@ -19,6 +19,18 @@ const Container = styled.div`
   position: relative;
 `;
 
+const BeiAn = styled.a`
+  text-decoration:none;
+  position:fixed;
+  width:100%;
+  text-align:center;
+  height:40px;
+  z-index:99;
+  bottom:0;
+  color: white;
+  mix-blend-mode: difference;
+  font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
+`;
 const App: FC = () => {
   return (
     <Container>
@@ -38,6 +50,7 @@ const App: FC = () => {
           </Route>
         </Switch>
       </Router>
+      <BeiAn href="https://beian.miit.gov.cn/">浙ICP备2021009034号</BeiAn>
     </Container>
   );
 };
