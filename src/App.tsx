@@ -27,15 +27,14 @@ const BeiAn = styled.div`
   height:40px;
   z-index:99;
   bottom:0;
-  color: white;
+  color: #939393;
   display: flex;
   justify-content: center;
-  mix-blend-mode: difference;
   font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
 `;
 const StyledA = styled.a`
   text-decoration:none;
-  color: white;
+  color: #939393;
   mix-blend-mode: difference;
   margin-right:10px;
 `;
@@ -43,6 +42,7 @@ const StyledBeian = styled.div`
   background-image:url(/assets/ba.png);
   background-position: center;
   background-size: cover;
+  mix-blend-mode:none;
   height:20px;
   width:20px;
 `;
