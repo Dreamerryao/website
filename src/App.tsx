@@ -5,6 +5,7 @@ import WowCanvas from "./views/WowCanvas";
 import About from "./views/About";
 import styled from "styled-components";
 import Tab from "./components/Tab";
+import MyTwenties from "./views/MyTwenties";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -62,6 +63,9 @@ const App: FC = () => {
           </Route>
           <Route path="*">
             <NotMatch />
+          </Route>
+          <Route path="/twenty">
+            <MyTwenties />
           </Route>
         </Switch>
       </Router>

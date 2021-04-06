@@ -13,7 +13,7 @@ const Page = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
   font-size: 2rem;
   font-weight: 500;
