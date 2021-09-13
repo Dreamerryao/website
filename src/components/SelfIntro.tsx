@@ -8,13 +8,14 @@ const Container = styled.div`
 `;
 const Page = styled.div`
   height: 100%;
-  width: 100vw;
+  // width: 100vw;
   display: flex;
   align-items: center;
 `;
 const Me = styled.div`
   background-image: url(/assets/me.jpg);
   width: 58vw;
+  min-width:400px;
   height: 100%;
   background-repeat: no-repeat;
   border-radius: 8px;
@@ -22,7 +23,7 @@ const Me = styled.div`
   background-size: cover;
 `;
 const Intro = styled.div`
-  width: 42vw;
+  // width: 42vw;
   height: 100%;
   font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
   padding: 80px 36px;
@@ -56,6 +57,7 @@ const TimeLine = styled.ul`
   height: auto;
   padding: 0px;
   margin: 0px;
+  margin-right:100px;
 `;
 
 const TimeLineItem = styled.li`
@@ -142,6 +144,7 @@ const SelfIntro: FC = () => {
             </StyledA>{" "}
             advised by Prof.{" "}
             <StyledA href="http://www.ycwu.org">Yingcai Wu</StyledA>
+            <br></br>(2019.9 - 2021.3)
           </StyledP>
         </TimeLineItem>
         <TimeLineItem>
@@ -157,17 +160,21 @@ const SelfIntro: FC = () => {
             ,which published in VIS2020
           </StyledP>
           <StyledP>
-            Started internship at{" "}
+            Intern at{" "}
             <StyledA href="https://www.molardata.com/">
               <strong>Molardata Tech</strong>
             </StyledA>
+            {" "}(2020.11 - 2021.1)
           </StyledP>
+          <StyledP>School-level Excellent League member</StyledP>
           <StyledP>Join NextLab of Zhejiang University</StyledP>
         </TimeLineItem>
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>
           <Title>2021</Title>
-          <StyledP>Started internship at ByteDance</StyledP>
+          <StyledP>Intern at ByteDance (2021.3 - 2021.9)</StyledP>
+          <StyledP>Do some security research with Prof.{" "}
+            <StyledA href="https://list.zju.edu.cn/kaibu/">Kai Bu</StyledA></StyledP>
         </TimeLineItem>
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>

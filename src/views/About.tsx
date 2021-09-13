@@ -13,29 +13,28 @@ const Page = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* mix-blend-mode: difference; */
   font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
   font-size: 2rem;
   font-weight: 500;
   line-height: 2;
 `;
-const StyledA = styled.a`
-  text-decoration: none;
-  color: inherit;
-`;
+// const StyledA = styled.a`
+//   text-decoration: none;
+//   color: inherit;
+// `;
 const About: FC = () => {
   return (
-    <div>
-      <MoveInWidthwise displayed={<SelfIntro />} />
-      <Page>
-        <div>Contact me</div>
-        <div>
-          GitHub:{" "}
-          <StyledA href="https://github.com/Dreamerryao">Dreamerryao</StyledA>
-        </div>
-        <div style={{ fontSize: "1.5rem" }}>QQ: 244791255</div>
-      </Page>
-    </div>
+    // <div>
+    <MoveInWidthwise displayed={<SelfIntro />} />
+    // <Page>
+    //   <div>Contact me</div>
+    //   <div>
+    //     GitHub:{" "}
+    //     <StyledA href="https://github.com/Dreamerryao">Dreamerryao</StyledA>
+    //   </div>
+    //   <div style={{ fontSize: "1.5rem" }}>QQ: 244791255</div>
+    // </Page>
+    // </div>
   );
 };
 export default memo(About);
