@@ -15,7 +15,7 @@ const Page = styled.div`
 const Me = styled.div`
   background-image: url(/assets/me.jpg);
   width: 58vw;
-  min-width:400px;
+  min-width: 400px;
   height: 100%;
   background-repeat: no-repeat;
   border-radius: 8px;
@@ -57,7 +57,7 @@ const TimeLine = styled.ul`
   height: auto;
   padding: 0px;
   margin: 0px;
-  margin-right:100px;
+  margin-right: 100px;
 `;
 
 const TimeLineItem = styled.li`
@@ -163,8 +163,8 @@ const SelfIntro: FC = () => {
             Intern at{" "}
             <StyledA href="https://www.molardata.com/">
               <strong>Molardata Tech</strong>
-            </StyledA>
-            {" "}(2020.11 - 2021.1)
+            </StyledA>{" "}
+            (2020.11 - 2021.1)
           </StyledP>
           <StyledP>School-level Excellent League member</StyledP>
           <StyledP>Join NextLab of Zhejiang University</StyledP>
@@ -172,9 +172,30 @@ const SelfIntro: FC = () => {
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>
           <Title>2021</Title>
-          <StyledP>Intern at ByteDance (2021.3 - 2021.9)</StyledP>
-          <StyledP>Do some security research with Prof.{" "}
-            <StyledA href="https://list.zju.edu.cn/kaibu/">Kai Bu</StyledA></StyledP>
+          <StyledP>
+            Intern at{" "}
+            <StyledA href="https://www.bytedance.com/">
+              <strong>ByteDance</strong>
+            </StyledA>{" "}
+            (2021.3 - 2021.9)
+          </StyledP>
+          <StyledP>
+            Do some security research with Prof.{" "}
+            <StyledA href="https://list.zju.edu.cn/kaibu/">
+              <strong>Kai Bu</strong>
+            </StyledA>
+          </StyledP>
+          <StyledP>
+            Intern at{" "}
+            <StyledA href="https://contek.io/">
+              <strong> Contek </strong>
+            </StyledA>{" "}
+            (2021.11 - 2022.2)
+          </StyledP>
+        </TimeLineItem>
+        <TimeLineItem>
+          <TimeLineMark></TimeLineMark>
+          <Title>2022</Title>
         </TimeLineItem>
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>

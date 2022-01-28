@@ -1,23 +1,23 @@
 import React, { memo, FC } from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import MoveInWidthwise from "../common_components/MoveInWidthwise";
 import SelfIntro from "../components/SelfIntro";
 
-const Page = styled.div`
-  height: 100vh;
-  width: 100vw;
-  background-image: url(/assets/selfBg.jpg);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 2;
-`;
+// const Page = styled.div`
+//   height: 100vh;
+//   width: 100vw;
+//   background-image: url(/assets/selfBg.jpg);
+//   background-position: center;
+//   background-size: cover;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-family: GenJyuuGothicX-Monospace-Heavy, Comic Sans MS;
+//   font-size: 2rem;
+//   font-weight: 500;
+//   line-height: 2;
+// `;
 // const StyledA = styled.a`
 //   text-decoration: none;
 //   color: inherit;
