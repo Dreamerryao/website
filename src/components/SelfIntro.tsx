@@ -117,7 +117,7 @@ const SelfIntro: FC = () => {
           </p>
           <Title>Undergraduate Student in Zhejiang University.</Title>
           <Title>
-            Major in <strong>information security</strong>.
+            Major in <strong>Information Security</strong>.
           </Title>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <StyledArrow />
@@ -128,15 +128,15 @@ const SelfIntro: FC = () => {
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>
           <Title>2018</Title>
-          <StyledP>got adimission to Zhejiang University{"   "}</StyledP>
+          <StyledP>Got adimission to Zhejiang University{"   "}</StyledP>
         </TimeLineItem>
         <ZJU />
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>
           <TimeLineMark></TimeLineMark>
           <Title>2019</Title>
-          <StyledP>First Level Scholarship</StyledP>
-          <StyledP>School-level outstanding league cadres</StyledP>
+          <StyledP>The First Prize Scholarship</StyledP>
+          <StyledP>School-level Outstanding league Cadres</StyledP>
           <StyledP>
             Became a member of{" "}
             <StyledA href="https://zjuidg.org/">
@@ -157,7 +157,7 @@ const SelfIntro: FC = () => {
               Visual Analytics of Multivariate Event Sequence Data in Racquet
               Sports
             </strong>
-            ,which published in VIS2020
+            , published in VIS2020
           </StyledP>
           <StyledP>
             Intern at{" "}
@@ -166,7 +166,7 @@ const SelfIntro: FC = () => {
             </StyledA>{" "}
             (2020.11 - 2021.1)
           </StyledP>
-          <StyledP>School-level Excellent League member</StyledP>
+          <StyledP>School-level Excellent League Member</StyledP>
           <StyledP>Join NextLab of Zhejiang University</StyledP>
         </TimeLineItem>
         <TimeLineItem>
@@ -185,6 +185,13 @@ const SelfIntro: FC = () => {
               <strong>Kai Bu</strong>
             </StyledA>
           </StyledP>
+          <StyledP>Tencent Scholarship</StyledP>
+          <StyledP>Provincial Government Scholarship</StyledP>
+          <StyledP>The Second Prize Scholarship</StyledP>
+        </TimeLineItem>
+        <TimeLineItem>
+          <TimeLineMark></TimeLineMark>
+          <Title>2022</Title>
           <StyledP>
             Intern at{" "}
             <StyledA href="https://contek.io/">
@@ -192,10 +199,6 @@ const SelfIntro: FC = () => {
             </StyledA>{" "}
             (2021.11 - 2022.2)
           </StyledP>
-        </TimeLineItem>
-        <TimeLineItem>
-          <TimeLineMark></TimeLineMark>
-          <Title>2022</Title>
         </TimeLineItem>
         <TimeLineItem>
           <TimeLineMark></TimeLineMark>
