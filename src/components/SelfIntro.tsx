@@ -203,7 +203,7 @@ const SelfIntro: FC = () => {
           </StyledP>
           <StyledP>School-level Outstanding Graduate Awards</StyledP>
           <StyledP>
-            Outstanding Graduation Thesis, adviced by{" "}
+            Outstanding Graduation Thesis, advised by{" "}
             <StyledA href="https://list.zju.edu.cn/kaibu/">
               <strong>Kai Bu</strong>
             </StyledA>
