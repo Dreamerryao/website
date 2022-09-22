@@ -113,11 +113,13 @@ const SelfIntro: FC = () => {
         <Me />
         <Intro>
           <p style={{ fontWeight: 900, fontSize: "4rem", lineHeight: 1.18 }}>
-            Hi,I'm Dreamerryao.
+            {"Hi,I'm Zuobin Wang."}
           </p>
-          <Title>Undergraduate Student in Zhejiang University.</Title>
           <Title>
-            Major in <strong>Information Security</strong>.
+            <del>Undergraduate</del> Master Student in Zhejiang University.
+          </Title>
+          <Title>
+            Major in <del>Information Security</del> CS.
           </Title>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <StyledArrow />
@@ -198,6 +200,23 @@ const SelfIntro: FC = () => {
               <strong> Contek </strong>
             </StyledA>{" "}
             (2021.11 - 2022.2)
+          </StyledP>
+          <StyledP>School-level Outstanding Graduate Awards</StyledP>
+          <StyledP>
+            Outstanding Graduation Thesis, adviced by{" "}
+            <StyledA href="https://list.zju.edu.cn/kaibu/">
+              <strong>Kai Bu</strong>
+            </StyledA>
+          </StyledP>
+          <StyledP>
+            🌟 Master Now ! (2022.09)
+          </StyledP>
+          <StyledP>
+            Intern at{" "}
+            <StyledA href="https://www.hyperchain.cn/en">
+              <strong> hyperchain </strong>
+            </StyledA>{" "}
+            (2022.06 - now)
           </StyledP>
         </TimeLineItem>
         <TimeLineItem>
